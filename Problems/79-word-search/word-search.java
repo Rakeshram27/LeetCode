@@ -1,6 +1,6 @@
 class Solution {
-    public int rows;
-    public int cols;
+    private int rows;
+    private int cols;
     private String targetWord;
     private char[][] gameBoard;
     public boolean exist(char[][] board, String word) {
