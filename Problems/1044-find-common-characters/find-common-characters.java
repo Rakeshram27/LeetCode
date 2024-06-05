@@ -1,6 +1,6 @@
 class Solution {
     public List<String> commonChars(String[] words) {
-        String s = words[0];
+       /* String s = words[0];
         List<String> list = new ArrayList<>();
         for(char ch : s.toCharArray()){
             int count = 0;
@@ -23,8 +23,8 @@ class Solution {
                list.add(ch + "");
            }
         }
-        return list;
-       /* List<String> ans = new ArrayList<>();
+        return list;*/
+        List<String> ans = new ArrayList<>();
         int[] count = new int[26]; 
         Arrays.fill(count, Integer.MAX_VALUE);
         for (String str : words) {
@@ -39,6 +39,6 @@ class Solution {
                  ans.add("" + c); 
                  }
         }
-        return ans;*/
+        return ans;
     }
 }
