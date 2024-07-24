@@ -7,10 +7,6 @@ class Solution {
             //dist[edges[node]] = edges[node] + 1;
             dfs(edges[node], edges, dist, visited, dis + 1);
         }
-    //     for(int i = 0;i < dist.length;i++) {
-    //         System.out.print(i+" "+dist[i]+" ");
-    //     }
-    //     System.out.println();
     }
     public int closestMeetingNode(int[] edges, int node1, int node2) {
         int n = edges.length;
@@ -40,15 +36,6 @@ class Solution {
                 //System.out.print(ans+" ");
             }
         }
-        // for(int i = 0;i < dist1.length;i++) {
-        //     System.out.print(i+" "+dist1[i]+" ");
-        // }
-        // System.out.println();
-
-        // for(int i = 0;i < dist2.length;i++) {
-        //     System.out.print(i+" "+dist2[i]+" ");
-        // }
-        // System.out.println();
         return ans;
     }
 }
