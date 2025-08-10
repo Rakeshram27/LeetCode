@@ -1,0 +1,17 @@
+class Solution {
+    public String countDigit(int n) {
+        char[] ch = new char[10];
+        while(n != 0) {
+            ch[n % 10]++;
+            n /= 10;
+        }
+        return new String(ch);
+    }
+    public boolean reorderedPowerOf2(int n) {
+        String str = countDigit(n);
+        for(int i = 1;i < 1e9; i <<= 1) {
+            if(str.equals(countDigit(i))) return true;
+        }
+        return false;
+    }
+}
